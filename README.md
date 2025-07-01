@@ -1,3 +1,15 @@
+<div align="center">
+
+
+# DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
+
+
+## I made Portable/Standalone Wan2GP for Windows with 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9 and your choice to install Torch 2.7.1 with Cuda 12.6 or Torch 2.7.1 with Cuda 12.8. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
+
+## Click here to jump to Install 👉 [Installation](Installation) 👈
+
+</div>
+
 # WanGP
 
 -----
@@ -102,41 +114,20 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ## 📋 Table of Contents
 
-- [🚀 Quick Start](#-quick-start)
 - [📦 Installation](#-installation)
 - [🎯 Usage](#-usage)
 - [📚 Documentation](#-documentation)
 - [🔗 Related Projects](#-related-projects)
 
-## 🚀 Quick Start
+-----
 
-**One-click installation:** Get started instantly with [Pinokio App](https://pinokio.computer/)
 
-**Manual installation:**
-```bash
-git clone https://github.com/deepbeepmeep/Wan2GP.git
-cd Wan2GP
-conda create -n wan2gp python=3.10.9
-conda activate wan2gp
-pip install torch==2.7.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/cu124
-pip install -r requirements.txt
-```
 
-**Run the application:**
-```bash
-python wgp.py  # Text-to-video (default)
-python wgp.py --i2v  # Image-to-video
-```
+# 📦 Installation
 
-**Update the application:**
-If using Pinokio use Pinokio to update otherwise:
-Get in the directory where WanGP is installed and:
-```bash
-git pull
-pip install -r requirements.txt
-```
+Make sure you have Git installed, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
-## 📦 Installation
+
 
 For detailed installation instructions for different GPU generations:
 - **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for RTX 10XX to RTX 50XX
@@ -172,4 +163,4 @@ For detailed installation instructions for different GPU generations:
 
 <p align="center">
 Made with ❤️ by DeepBeepMeep
-</p> 
+</p>  
