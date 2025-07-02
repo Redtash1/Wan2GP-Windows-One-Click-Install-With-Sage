@@ -32,7 +32,7 @@ WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models 
 **Follow DeepBeepMeep on Twitter/X to get the Latest News**: https://x.com/deepbeepmeep
 
 ## 🔥 Latest Updates
-### June 23 2025: WanGP v6.3, Vace Unleashed. Thought we couldnt squeeze Vace even more ?
+### June 23 2025: WanGP v6.3, Vace Unleashed. Thought we couldn't squeeze Vace even more ?
 - Multithreaded preprocessing when possible for faster generations
 - Multithreaded frames Lanczos Upsampling as a bonus
 - A new Vace preprocessor : *Flow* to extract fluid motion
@@ -62,7 +62,7 @@ Of course all these new stuff work on all Vace finetunes (including Vace Fusioni
 Thanks also to Reevoy24 for adding a Notfication sound at the end of a generation and for fixing the background color of the current generation summary.
 
 ### June 12 2025: WanGP v6.0
-👋 *Finetune models*: You find the 20 models supported by WanGP not sufficient ? Too impatient to wait for the next release to get the support for a newly released model ? Your prayers have been answered: if a new model is compatible with a model architecture supported by WanGP, you can add by yourself the support for this model in WanGP by just creating a finetune model definition. You can then store this model in the cloud (for instance in Huggingface) and the very light finetune definition file can be easily shared with other users. WanGP will download automatically the finetuned model for them.
+👋 *Finetune models*: If you find the 20 models supported by WanGP not sufficient ? Too impatient to wait for the next release to get the support for a newly released model ? Your prayers have been answered: if a new model is compatible with a model architecture supported by WanGP, you can add by yourself the support for this model in WanGP by just creating a finetune model definition. You can then store this model in the cloud (for instance in Huggingface) and the very light finetune definition file can be easily shared with other users. WanGP will automatically download the finetuned model for them.
 
 To celebrate the new finetunes support, here are a few finetune gifts (directly accessible from the model selection menu):
 - *Fast Hunyuan Video* : generate model t2v in only 6 steps
@@ -125,6 +125,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 # 📦 Installation
 
+Make sure your Nvidia graphics drivers are up-to-date. If they are not or your not sure please click on the following link to download Nvidia graphics drivers. 👉[Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/)
 Make sure you have Git installed, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
 
