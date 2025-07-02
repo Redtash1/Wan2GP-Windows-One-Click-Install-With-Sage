@@ -4,7 +4,7 @@
 # DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
 
 
-## I made Portable/Standalone Wan2GP for Windows with 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9 and your choice to install Torch 2.7.1 with Cuda 12.6 or Torch 2.7.1 with Cuda 12.8. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
+## I made Portable/Standalone Wan2GP for Windows Nvidia with 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9 and your choice to install Torch 2.7.1 with Cuda 12.6 or Torch 2.7.1 with Cuda 12.8. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
 
 ## Click here to jump to Install 👉 [Installation](Installation) 👈
 
