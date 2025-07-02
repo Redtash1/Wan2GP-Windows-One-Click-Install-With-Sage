@@ -125,6 +125,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 # 📦 Installation
 
 Make sure your Nvidia graphics drivers are up-to-date. If they are not or your not sure please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
+
 Make sure you have Git installed, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
 
