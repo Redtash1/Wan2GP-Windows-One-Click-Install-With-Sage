@@ -120,8 +120,13 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 -----
 
+## GPU Compatibility
 
-
+- RTX 10XX, 20XX: Supported with SDPA attention. Try using the Install_Wan2GP_Torch_2.6.0+cu12.4.bat for compatibility. 
+- RTX 30XX, 40XX: Sage Attention Support. Use the Install_Wan2GP_Torch_2.7.1+cu12.8.bat.
+- RTX 50XX: Use the Install_Wan2GP_Torch_2.7.1+cu12.8.bat.
+---
+---
 # 📦 Installation
 
 Make sure your Nvidia graphics drivers are up-to-date. If they are not or your not sure please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
