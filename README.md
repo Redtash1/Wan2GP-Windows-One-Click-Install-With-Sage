@@ -19,6 +19,28 @@ WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models 
 
 **Follow DeepBeepMeep on Twitter/X to get the Latest News**: https://x.com/deepbeepmeep
 
+
+## 🔥 Latest Updates
+### July 2 2025: WanGP v6.5.1, WanGP takes care of you: lots of quality of life features:
+- View directly inside WanGP the properties (seed, resolutions, length, most settings...) of the past generations
+- In one click use the newly generated video as a Control Video or Source Video to be continued 
+- Manage multiple settings for the same model and switch between them using a dropdown box 
+- WanGP will keep the last generated videos in the Gallery and will remember the last model you used if you restart the app but kept the Web page open
+- Custom resolutions : add a file in the WanGP folder with the list of resolutions you want to see in WanGP (look at the instruction readme in this folder)
+
+Taking care of your life is not enough, you want new stuff to play with ?
+- MMAudio directly inside WanGP : add an audio soundtrack that matches the content of your video. By the way it is a low VRAM MMAudio and 6 GB of VRAM should be sufficient. You will need to go in the *Extensions* tab of the WanGP *Configuration* to enable MMAudio
+- Forgot to upsample your video during the generation ? want to try another MMAudio variation ? Fear not you can also apply upsampling or add an MMAudio track once the video generation is done. Even better you can ask WangGP for multiple variations of MMAudio to pick the one you like best
+- MagCache support: a new step skipping approach, supposed to be better than TeaCache. Makes a difference if you usually generate with a high number of steps
+- SageAttention2++ support : not just the compatibility but also a slightly reduced VRAM usage
+- Video2Video in Wan Text2Video : this is the paradox, a text2video can become a video2video if you start the denoising process later on an existing video
+- FusioniX upsampler: this is an illustration of Video2Video in Text2Video. Use the FusioniX text2video model with an output resolution of 1080p and a denoising strength of 0.25 and you will get one of the best upsamplers (in only 2/3 steps, you will need lots of VRAM though). Increase the denoising strength and you will get one of the best Video Restorer
+- Choice of Wan Samplers / Schedulers
+- More Lora formats support
+
+**If you had upgraded to v6.5 please upgrade again to 6.5.1 as this will fix a bug that ignored Loras beyond the first one**
+
+
 ## 🔥 Latest Updates
 ### June 23 2025: WanGP v6.3, Vace Unleashed. Thought we couldnt squeeze Vace even more ?
 - Multithreaded preprocessing when possible for faster generations
