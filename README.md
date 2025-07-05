@@ -4,7 +4,7 @@
 # DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
 
 
-## I made Wan2GP Portable/Standalone for Windows with a Nvidia GPU. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8 or whatever the newest Torch version for Cuda 12.8 is at the time of installation. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
+## I made Wan2GP Portable/Standalone for Windows with only a Nvidia GPU. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8 or whatever the newest Torch version for Cuda 12.8 is at the time of installation. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
@@ -126,7 +126,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ## Nvidia GPU Compatibility
  
-- RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
+- Only Nvidia GPU's RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
 
 1. Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
