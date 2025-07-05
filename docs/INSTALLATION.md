@@ -8,7 +8,7 @@ This guide covers installation for different GPU generations and operating syste
 - Conda or Python venv
 - Compatible GPU (RTX 10XX or newer recommended)
 
-## Installation for RTX 10XX to RTX 40XX (Stable)
+## Installation for GTX 10XX to RTX 40XX (Stable)
 
 This installation uses PyTorch 2.6.0 which is well-tested and stable.
 
