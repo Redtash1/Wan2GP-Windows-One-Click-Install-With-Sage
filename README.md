@@ -124,7 +124,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ---
 
-## Nvidia GPU Compatibility
+## Nvidia GPU Compatibility Only
  
 - Only Nvidia GPU's RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
