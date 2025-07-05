@@ -133,7 +133,9 @@ Make sure your Nvidia graphics drivers are up-to-date. If they are not or if you
 
 Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
-These instructions below won't work for this version of Wan2GP, because this version uses python_embedded and not Conda or a venv.
+---
+
+These instructions below won't work for this version of Wan2GP, because this version uses python_embedded and not Conda or a venv. But you can try them if you want to do a manual install.
 
 For detailed installation instructions for different GPU generations: 
 - **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
