@@ -129,13 +129,15 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 - RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
 
-Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
+1. Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
 
-Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
+2. Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
+
+3. Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage] 👈 or from the Releases section at the top right of this page. 
 
 ---
 
-These instructions below won't work for this version of Wan2GP, because this version uses python_embedded and not Conda or a venv. But you can try them if you want to do a manual install.
+These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install.
 
 For detailed installation instructions for different GPU generations: 
 - **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
