@@ -4,7 +4,7 @@
 # DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
 
 
-## I made Wan2GP Portable/Standalone for Windows with a Nvidia GPU. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9 and your choice to install Torch 2.6.0 with Cuda 12.4 or Torch 2.7.1 with Cuda 12.8 or whatever the newest Torch version for Cuda 12.8 is at the time of installation. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
+## I made Wan2GP Portable/Standalone for Windows with a Nvidia GPU. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8 or whatever the newest Torch version for Cuda 12.8 is at the time of installation. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
@@ -125,20 +125,18 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 ---
 
 ## Nvidia GPU Compatibility
-
-- RTX 10XX, 20XX: Supported with SDPA attention. Use the Install_Wan2GP_Torch_2.6.0+cu12.4.bat for compatibility. 
-- RTX 30XX, 40XX: Sage Attention Support. Use the Install_Wan2GP_Torch_2.7.1+cu12.8.bat.
-- RTX 50XX: Use the Install_Wan2GP_Torch_2.7.1+cu12.8.bat.
+ 
+- RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
 
 Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
 
 Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
+These instructions below won't work for this version of Wan2GP, because this version uses python_embedded and not Conda or a venv.
 
-
-For detailed installation instructions for different GPU generations:
-- **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for RTX 10XX to RTX 50XX
+For detailed installation instructions for different GPU generations: 
+- **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
 
 ## 🎯 Usage
 
