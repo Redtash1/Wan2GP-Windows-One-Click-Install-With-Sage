@@ -4,7 +4,7 @@
 # DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
 
 
-## I made Wan2GP Portable/Standalone for Windows with only a Nvidia GPU. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8 or whatever the newest Torch version for Cuda 12.8 is at the time of installation. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut.
+## I made Wan2GP Portable/Standalone for Windows that uses Nvidia GPU's only. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8 or whatever the newest Torch version for Cuda 12.8 is at the time of installation. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
@@ -19,7 +19,6 @@
 
 WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models with:
 - Low VRAM requirements (as low as 6 GB of VRAM is sufficient for certain models)
-- Support for old GPUs (RTX 10XX, 20xx, ...)
 - Very Fast on the latest GPUs
 - Easy to use Full Web based interface
 - Auto download of the required model adapted to your specific architecture
@@ -129,6 +128,8 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 - Only Nvidia GPU's RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
 
+### All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository.
+
 1. Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
 
 2. Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
@@ -137,7 +138,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ---
 
-These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install.
+These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you have to go to the original Wan2GP Repository and Git clone it from there because I have changed files in this version, so they are not the same files that you would need for the manual installation.
 
 For detailed installation instructions for different GPU generations: 
 - **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
