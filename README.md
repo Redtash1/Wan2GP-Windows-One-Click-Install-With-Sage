@@ -190,9 +190,11 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 <img width="775" height="270" alt="Screenshot 2025-07-14 065810" src="https://github.com/user-attachments/assets/9ad3545c-0221-4221-9252-eae872ceadd9" />
 
--
+</div>
 
-6. Then double click on Install_Wan2GP_Torch_2.7.1+cu12.8.bat to start the installation. 
+6. Then double click on Install_Wan2GP_Torch_2.7.1+cu12.8.bat to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
+
+7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut. 
 
 ---
 
