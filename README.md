@@ -198,7 +198,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ---
 
-These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you have to go to the original Wan2GP Repository and Git clone it from there because I have changed files in this version, so they are not the same files that you would need for the manual installation.
+These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you should go to the original Wan2GP Repository and Git clone it from there.
 
 For detailed installation instructions for different GPU generations: 
 - **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
