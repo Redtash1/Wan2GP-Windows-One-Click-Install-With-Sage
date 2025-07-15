@@ -196,6 +196,8 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut. 
 
+If you have any problems with installation or with using Wan2GP join this Discord Server to get Help from Other Users and show your Best Videos: https://discord.gg/g7efUW9jGV
+
 ---
 
 These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you should go to the original Wan2GP Repository and Git clone it from there.
