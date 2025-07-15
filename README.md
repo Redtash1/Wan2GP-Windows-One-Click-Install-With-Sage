@@ -196,7 +196,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut. 
 
-If you have any problems with installation or with using Wan2GP join this Discord Server to get Help from Other Users and show your Best Videos: https://discord.gg/g7efUW9jGV
+### If you have any problems with installation contact me Redtash1 at Discord Channel below but if it's with using or errors with Wan2GP you can get Help from Deepbeepmeep or ther Users from this official WanGP Discord: https://discord.gg/g7efUW9jGV
 
 ---
 
