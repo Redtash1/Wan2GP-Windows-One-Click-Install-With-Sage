@@ -173,7 +173,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ## Nvidia GPU Compatibility Only
  
-- Only Nvidia GPU's RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
+- Only Nvidia GPU's GTX 10XX, 16XX and RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
 
 ### All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository.
