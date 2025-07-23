@@ -194,7 +194,9 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 6. Then double click on Install_Wan2GP_Torch_2.7.1+cu12.8.bat to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
 
-7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut. 
+7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut.
+
+### If this worked for you, Please give it a Star ⭐. Thank you. 
 
 ### If you have any problems with installation contact me Redtash1 at Discord Channel below but if it's with using or errors with Wan2GP after a successful installation, you can get Help from Deepbeepmeep or other Users from the official WanGP Discord: https://discord.gg/g7efUW9jGV
 
