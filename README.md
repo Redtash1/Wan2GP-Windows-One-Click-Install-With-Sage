@@ -21,6 +21,7 @@
 
 WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models with:
 - Low VRAM requirements (as low as 6 GB of VRAM is sufficient for certain models)
+- Support for old GPUs (RTX 10XX, 20xx, ...)
 - Very Fast on the latest GPUs
 - Easy to use Full Web based interface
 - Auto download of the required model adapted to your specific architecture
