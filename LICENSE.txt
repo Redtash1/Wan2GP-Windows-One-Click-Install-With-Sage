@@ -1,17 +1,16 @@
-FREE for Non Commercial USE
+WanGP NON-COMMERCIAL EVALUATION LICENSE 1.0
 
-You are free to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
-The licensor cannot revoke these freedoms as long as you follow the license terms.
+Definitions
+1.1 “Software” means the source code, binaries, libraries, utilities and UI released under this license.
+1.2 “Output” means images, videos or other media produced by running the Software.
+1.3 “Commercial Use” means:
+a) selling, sublicensing, renting, leasing, or otherwise distributing the Software, in whole or in part, for a fee or other consideration; or
+b) offering the Software (or any derivative) as part of a paid product or hosted service; or
+c) using the Software (or any derivative) to provide cloud-based or backend services, where end users access or pay for those services.
 
-Under the following terms:
-- Attribution — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-NonCommercial — You may not use the material for commercial purposes .
-
-- No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-Notices:
-
-- You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation .
+License Grant
+Subject to Section 3:
+a) You are granted a worldwide, non-exclusive, royalty-free, revocable license to use, reproduce, modify and distribute the Software for non-commercial purposes only.
+b) You are granted a worldwide, non-exclusive, royalty-free, irrevocable license to use, reproduce, modify and distribute the Output for any purpose, including commercial sale, provided that any commercial distribution of the Output includes a clear notice that the Output was produced (in whole or in part) using WanGP, along with a hyperlink to the WanGP application’s About tab or repository.
 
 No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
