@@ -4,9 +4,11 @@
 # DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
 
 
-## I made Wan2GP Portable/Standalone for Windows that uses Nvidia GPU's only. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8 or whatever the newest Torch version for Cuda 12.8 is at the time of installation. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
+## I made Wan2GP Portable/Standalone for Windows that uses Nvidia GPU's only. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
+
+# [![Downloads](https://img.shields.io/github/downloads/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/total.svg)](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases)
 
 </div>
 
@@ -19,6 +21,7 @@
 
 WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models with:
 - Low VRAM requirements (as low as 6 GB of VRAM is sufficient for certain models)
+- Support for old GPUs (RTX 10XX, 20xx, ...)
 - Very Fast on the latest GPUs
 - Easy to use Full Web based interface
 - Auto download of the required model adapted to your specific architecture
@@ -30,7 +33,82 @@ WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models 
 
 **Follow DeepBeepMeep on Twitter/X to get the Latest News**: https://x.com/deepbeepmeep
 
+<img width="1919" height="1054" alt="Screenshot 2025-07-31 112759" src="https://github.com/user-attachments/assets/4847b3e2-ee17-4dab-ac4f-aeb46e94a781" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-07-31 112834" src="https://github.com/user-attachments/assets/20238cf2-1c4b-4219-96b5-0a437253343b" />
+
+
 ## 🔥 Latest Updates
+
+### July 30 2025: WanGP v7.5:  Just another release ... Wan 2.2 part 2
+Here is now Wan 2.2 image2video a very good model if you want to set Start and End frames. Two Wan 2.2 models delivered, only one to go ...
+
+Please note that although it is an image2video model it is structurally very close to Wan 2.2 text2video (same layers with only a different initial projection). Given that Wan 2.1 image2video loras don't work too well (half of their tensors are not supported), I have decided that this model will look for its loras in the text2video loras folder instead of the image2video folder.
+
+I have also optimized RAM management with Wan 2.2 so that loras and modules will be loaded only once in RAM and Reserved RAM, this saves up to 5 GB of RAM which can make a difference...
+
+And this time I really removed Vace Cocktail Light which gave a blurry vision.
+
+### July 29 2025: WanGP v7.4:  Just another release ... Wan 2.2 Preview
+Wan 2.2 is here.  The good news is that WanGP wont require a single byte of extra VRAM to run it and it will be as fast as Wan 2.1. The bad news is that you will need much more RAM if you want to leverage entirely this new model since it has twice has many parameters.
+
+So here is a preview version of Wan 2.2 that is without the 5B model and Wan 2.2 image to video for the moment.
+
+However as I felt bad to deliver only half of the wares, I gave you instead .....** Wan 2.2 Vace Experimental Cocktail** !
+
+Very good surprise indeed, the loras and Vace partially work with Wan 2.2. We will need to wait for the official Vace 2.2 release since some Vace features are broken like identity preservation
+
+Bonus zone: Flux multi images conditions has been added, or maybe not if I broke everything as I have been distracted by Wan...
+
+7.4 update: I forgot to update the version number. I also removed Vace Cocktail light which didnt work well.
+
+### July 27 2025: WanGP v7.3 : Interlude
+While waiting for Wan 2.2, you will appreciate the model selection hierarchy which is very useful to collect even more models. You will also appreciate that WanGP remembers which model you used last in each model family.
+
+### July 26 2025: WanGP v7.2 : Ode to Vace
+I am really convinced that Vace can do everything the other models can do and in a better way especially as Vace can be combined with Multitalk.
+
+Here are some new Vace improvements:
+- I have provided a default finetune named *Vace Cocktail*  which is a model created on the fly using the Wan text 2 video model and the Loras used to build FusioniX. The weight of the *Detail Enhancer* Lora has been reduced to improve identity preservation. Copy the model definition in *defaults/vace_14B_cocktail.json* in the *finetunes/* folder to change the Cocktail composition. Cocktail contains already some Loras acccelerators so no need to add on top a Lora Accvid, Causvid or Fusionix, ... . The whole point of Cocktail is to be able  to build you own FusioniX (which originally is a combination of 4 loras) but without the inconvenient of FusioniX.
+- Talking about identity preservation, it tends to go away when one generates a single Frame instead of a Video which is shame for our Vace photoshop. But there is a solution : I have added an Advanced Quality option, that tells WanGP to generate a little more than a frame (it will still keep only the first frame). It will be a little slower but you will be amazed how Vace Cocktail combined with this option will preserve identities (bye bye *Phantom*). 
+- As in practise I have observed one switches frequently between *Vace text2video* and *Vace text2image* I have put them in the same place they are now just one tab away, no need to reload the model. Likewise *Wan text2video* and *Wan tex2image* have been merged.
+- Color fixing when using Sliding Windows. A new postprocessing *Color Correction* applied automatically by default (you can disable it in the *Advanced tab Sliding Window*) will try to match the colors of the new window with that of the previous window. It doesnt fix all the unwanted artifacts of the new window but at least this makes the transition smoother. Thanks to the multitalk team for the original code.
+
+Also you will enjoy our new real time statistics (CPU / GPU usage, RAM / VRAM used, ... ). Many thanks to **Redtash1** for providing the framework for this new feature ! You need to go in the Config tab to enable real time stats.
+
+### July 21 2025: WanGP v7.12
+- Flux Family Reunion : *Flux Dev* and *Flux Schnell* have been invited aboard WanGP. To celebrate that, Loras support for the Flux *diffusers* format has also been added.
+
+- LTX Video upgraded to version 0.9.8: you can now generate 1800 frames (1 min of video !) in one go without a sliding window. With the distilled model it will take only 5 minutes with a RTX 4090 (you will need 22 GB of VRAM though). I have added options to select higher humber frames if you want to experiment
+
+- LTX Video ControlNet : it is a Control Net that allows you for instance to transfer a Human motion or Depth from a control video. It is not as powerful as Vace but can produce interesting things especially as now you can generate quickly a 1 min video. Under the scene IC-Loras (see below) for Pose, Depth and Canny are automatically loaded for you, no need to add them. 
+
+- LTX IC-Lora support: these are special Loras that consumes a conditional image or video
+Beside the pose, depth and canny IC-Loras transparently loaded there is the *detailer* (https://huggingface.co/Lightricks/LTX-Video-ICLoRA-detailer-13b-0.9.8) which is basically an upsampler. Add the *detailer* as a Lora and use LTX Raw Format as control net choice to use it.
+
+- Matanyone is now also for the GPU Poor as its VRAM requirements have been divided by 2! (7.12 shadow update)
+
+- Easier way to select video resolution 
+
+
+### July 15 2025: WanGP v7.0 is an AI Powered Photoshop
+This release turns the Wan models into Image Generators. This goes way more than allowing to generate a video made of single frame :
+- Multiple Images generated at the same time so that you can choose the one you like best.It is Highly VRAM optimized so that you can generate for instance 4 720p Images at the same time with less than 10 GB
+- With the *image2image* the original text2video WanGP becomes an image upsampler / restorer
+- *Vace image2image* comes out of the box with image outpainting, person / object replacement, ...
+- You can use in one click a newly Image generated as Start Image or Reference Image for a Video generation
+
+And to complete the full suite of AI Image Generators, Ladies and Gentlemen please welcome for the first time in WanGP : **Flux Kontext**.\
+As a reminder Flux Kontext is an image editor : give it an image and a prompt and it will do the change for you.\
+This highly optimized version of Flux Kontext will make you feel that you have been cheated all this time as WanGP Flux Kontext requires only 8 GB of VRAM to generate 4 images at the same time with no need for quantization.
+
+WanGP v7 comes with *Image2image* vanilla and *Vace FusinoniX*. However you can build your own finetune where you will combine a text2video or Vace model with any combination of Loras.
+
+Also in the news:
+- You can now enter the *Bbox* for each speaker in *Multitalk* to precisely locate who is speaking. And to save some headaches the *Image Mask generator* will give you the *Bbox* coordinates of an area you have selected.
+- *Film Grain* post processing to add a vintage look at your video
+- *First Last Frame to Video* model should work much better now as I have discovered rencently its implementation was not complete
+- More power for the finetuners, you can now embed Loras directly in the finetune definition. You can also override the default models (titles, visibility, ...) with your own finetunes. Check the doc that has been updated.
 
 ### July 10 2025: WanGP v6.7, is NAG a game changer, you tell me?
 Maybe you knew that already but most *Loras accelerators* we use today (Causvid, FusioniX) don't use *Guidance* at all (that it is *CFG* is set to 1). This helps to get much faster generations but the downside is that *Negative Prompts* are completely ignored (including the default ones set by the models). **NAG** (https://github.com/ChenDarYen/Normalized-Attention-Guidance) aims to solve that by injecting the *Negative Prompt* during the *attention* processing phase.
@@ -173,7 +251,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ## Nvidia GPU Compatibility Only
  
-- Only Nvidia GPU's RTX 30XX, 40XX, 50XX: Sage Attention Supported. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
+- Only Nvidia GPU's GTX 10XX, 16XX and RTX 30XX, 40XX, 50XX: Sage Attention Supported on 30, 40 and 50 series. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
 
 ### All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository.
@@ -194,11 +272,15 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 6. Then double click on Install_Wan2GP_Torch_2.7.1+cu12.8.bat to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
 
-7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut. 
+7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut.
+
+### If this worked for you, Please give it a Star ⭐. Thank you. 
+
+### If you have any problems with installation contact me Redtash1 at Discord Channel below but if it's with using or errors with Wan2GP after a successful installation, you can get Help from Deepbeepmeep or other Users from the official WanGP Discord: https://discord.gg/g7efUW9jGV
 
 ---
 
-These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you have to go to the original Wan2GP Repository and Git clone it from there because I have changed files in this version, so they are not the same files that you would need for the manual installation.
+These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you should go to the original Wan2GP Repository and Git clone it from there.
 
 For detailed installation instructions for different GPU generations: 
 - **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
