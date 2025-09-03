@@ -1,3 +1,17 @@
+<div align="center">
+
+
+# DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
+
+
+## I made Wan2GP Portable/Standalone for Windows that uses 40 & 50 series Nvidia GPU's only. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Create a Launch Wan2GP Desktop Shortcut. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
+
+## Click here to jump to Install 👉 [Installation](#-Installation) 👈
+
+# [![Downloads](https://img.shields.io/github/downloads/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/total.svg)](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases)
+
+</div>
+
 # WanGP
 
 -----
@@ -7,17 +21,22 @@
 
 WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models with:
 - Low VRAM requirements (as low as 6 GB of VRAM is sufficient for certain models)
-- Support for old GPUs (RTX 10XX, 20xx, ...)
+- Support for 40 & 50 series Nvidia GPU's
 - Very Fast on the latest GPUs
 - Easy to use Full Web based interface
 - Auto download of the required model adapted to your specific architecture
-- Tools integrated to facilitate Video Generation : Mask Editor, Prompt Enhancer, Temporal and Spatial Generation, MMAudio, Video Browser, Pose / Depth / Flow extractor
+- Tools integrated to facilitate Video Generation : Mask Editor, Prompt Enhancer, Temporal and Spatial Generation
 - Loras Support to customize each model
 - Queuing system : make your shopping list of videos to generate and come back later 
 
 **Discord Server to get Help from Other Users and show your Best Videos:** https://discord.gg/g7efUW9jGV
 
 **Follow DeepBeepMeep on Twitter/X to get the Latest News**: https://x.com/deepbeepmeep
+
+<img width="1919" height="1054" alt="Screenshot 2025-07-31 112759" src="https://github.com/user-attachments/assets/4847b3e2-ee17-4dab-ac4f-aeb46e94a781" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-07-31 112834" src="https://github.com/user-attachments/assets/20238cf2-1c4b-4219-96b5-0a437253343b" />
+
 
 ## 🔥 Latest Updates : 
 ### September 2 2025: WanGP v8.31 - At last the pain stops
@@ -28,10 +47,7 @@ WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models 
 - Unofficial **Video to Video (Non Sparse this time) for InfinitTalk**. Use the Strength Noise slider to decide how much motion of the original window you want to keep. I have also *greatly reduced the VRAM requirements for Multitalk / Infinitalk* (especially the multispeakers version & when generating at 1080p). 
 
 - **Experimental Sage 3 Attention support**: you will need to deserve this one, first you need a Blackwell GPU (RTX50xx) and request an access to Sage 3 Github repo, then you will have to compile Sage 3, install it and cross your fingers ...
-
-
-*update 8.31: one shouldnt talk about bugs if one doesn't want to attract bugs*
-
+ 
 ### August 29 2025: WanGP v8.21 -  Here Goes Your Weekend
 
 - **InfiniteTalk Video to Video**: this feature can be used for Video Dubbing. Keep in mind that it is a *Sparse Video to Video*, that is internally only image is used by Sliding Window. However thanks to the new *Smooth Transition* mode, each new clip is connected to the previous and all the camera work is done by InfiniteTalk. If you dont get any transition, increase the number of frames of a Sliding Window (81 frames recommended)
@@ -166,11 +182,10 @@ Here are some new Vace improvements:
 
 Also you will enjoy our new real time statistics (CPU / GPU usage, RAM / VRAM used, ... ). Many thanks to **Redtash1** for providing the framework for this new feature ! You need to go in the Config tab to enable real time stats.
 
-
 ### July 21 2025: WanGP v7.12
 - Flux Family Reunion : *Flux Dev* and *Flux Schnell* have been invited aboard WanGP. To celebrate that, Loras support for the Flux *diffusers* format has also been added.
 
-- LTX Video upgraded to version 0.9.8: you can now generate 1800 frames (1 min of video !) in one go without a sliding window. With the distilled model it will take only 5 minutes with a RTX 4090 (you will need 22 GB of VRAM though). I have added options to select higher humber frames if you want to experiment (go to Configuration Tab / General / Increase the Max Number of Frames, change the value and restart the App)
+- LTX Video upgraded to version 0.9.8: you can now generate 1800 frames (1 min of video !) in one go without a sliding window. With the distilled model it will take only 5 minutes with a RTX 4090 (you will need 22 GB of VRAM though). I have added options to select higher humber frames if you want to experiment
 
 - LTX Video ControlNet : it is a Control Net that allows you for instance to transfer a Human motion or Depth from a control video. It is not as powerful as Vace but can produce interesting things especially as now you can generate quickly a 1 min video. Under the scene IC-Loras (see below) for Pose, Depth and Canny are automatically loaded for you, no need to add them. 
 
@@ -201,8 +216,7 @@ Also in the news:
 - *First Last Frame to Video* model should work much better now as I have discovered rencently its implementation was not complete
 - More power for the finetuners, you can now embed Loras directly in the finetune definition. You can also override the default models (titles, visibility, ...) with your own finetunes. Check the doc that has been updated.
 
-
-### July 10 2025: WanGP v6.7, is NAG a game changer ? you tell me
+### July 10 2025: WanGP v6.7, is NAG a game changer, you tell me?
 Maybe you knew that already but most *Loras accelerators* we use today (Causvid, FusioniX) don't use *Guidance* at all (that it is *CFG* is set to 1). This helps to get much faster generations but the downside is that *Negative Prompts* are completely ignored (including the default ones set by the models). **NAG** (https://github.com/ChenDarYen/Normalized-Attention-Guidance) aims to solve that by injecting the *Negative Prompt* during the *attention* processing phase.
 
 So WanGP 6.7 gives you NAG, but not any NAG, a *Low VRAM* implementation, the default one ends being VRAM greedy. You will find NAG in the *General* advanced tab for most Wan models. 
@@ -248,49 +262,134 @@ Taking care of your life is not enough, you want new stuff to play with ?
 
 **If you had upgraded to v6.5 please upgrade again to 6.5.1 as this will fix a bug that ignored Loras beyond the first one**
 
+
+### June 23 2025: WanGP v6.3, Vace Unleashed. Thought we couldn't squeeze Vace even more ?
+- Multithreaded preprocessing when possible for faster generations
+- Multithreaded frames Lanczos Upsampling as a bonus
+- A new Vace preprocessor : *Flow* to extract fluid motion
+- Multi Vace Controlnets: you can now transfer several properties at the same time. This opens new possibilities to explore, for instance if you transfer *Human Movement* and *Shapes* at the same time for some reasons the lighting of your character will take into account much more the environment of your character.
+- Injected Frames Outpainting, in case you missed it in WanGP 6.21
+
+Don't know how to use all of the Vace features ? Check the Vace Guide embedded in WanGP as it has also been updated.
+
+
+### June 19 2025: WanGP v6.2, Vace even more Powercharged
+👋 Have I told you that I am a big fan of Vace ? Here are more goodies to unleash its power: 
+- If you ever wanted to watch Star Wars in 4:3, just use the new *Outpainting* feature and it will add the missing bits of image at the top and the bottom of the screen. The best thing is *Outpainting* can be combined with all the other Vace modifications, for instance you can change the main character of your favorite movie at the same time  
+- More processing can combined at the same time  (for instance the depth process can be applied outside the mask)
+- Upgraded the depth extractor to Depth Anything 2 which is much more detailed
+
+As a bonus, I have added two finetunes based on the Safe-Forcing technology (which requires only 4 steps to generate a video): Wan 2.1 text2video Self-Forcing and Vace Self-Forcing. I know there is Lora around but the quality of the Lora is worse (at least with Vace) compared to the full model. Don't hesitate to share your opinion about this on the discord server. 
+### June 17 2025: WanGP v6.1, Vace Powercharged
+👋 Lots of improvements for Vace the Mother of all Models:
+- masks can now be combined with on the fly processing of a control video, for instance you can extract the motion of a specific person defined by a mask
+- on the fly modification of masks : reversed masks (with the same mask you can modify the background instead of the people covered by the masks), enlarged masks (you can cover more area if for instance the person you are trying to inject is larger than the one in the mask), ...
+- view these modified masks directly inside WanGP during the video generation to check they are really as expected
+- multiple frames injections: multiples frames can be injected at any location of the video
+- expand past videos in on click: just select one generated video to expand it
+
+Of course all these new stuff work on all Vace finetunes (including Vace Fusionix).
+
+Thanks also to Reevoy24 for adding a Notfication sound at the end of a generation and for fixing the background color of the current generation summary.
+
+### June 12 2025: WanGP v6.0
+👋 *Finetune models*: If you find the 20 models supported by WanGP not sufficient ? Too impatient to wait for the next release to get the support for a newly released model ? Your prayers have been answered: if a new model is compatible with a model architecture supported by WanGP, you can add by yourself the support for this model in WanGP by just creating a finetune model definition. You can then store this model in the cloud (for instance in Huggingface) and the very light finetune definition file can be easily shared with other users. WanGP will automatically download the finetuned model for them.
+
+To celebrate the new finetunes support, here are a few finetune gifts (directly accessible from the model selection menu):
+- *Fast Hunyuan Video* : generate model t2v in only 6 steps
+- *Hunyuan Vido AccVideo* : generate model t2v in only 5 steps
+- *Wan FusioniX*: it is a combo of AccVideo / CausVid ans other models and can generate high quality Wan videos in only 8 steps
+
+One more thing...
+
+The new finetune system can be used to combine complementaty models : what happens when you combine  Fusionix Text2Video and Vace Control Net ?
+
+You get **Vace FusioniX**: the Ultimate Vace Model, Fast (10 steps, no need for guidance) and with a much better quality Video than the original slower model (despite being the best Control Net out there). Here goes one more finetune...
+
+Check the *Finetune Guide* to create finetune models definitions and share them on the WanGP discord server.
+
+### June 11 2025: WanGP v5.5
+👋 *Hunyuan Video Custom Audio*: it is similar to Hunyuan Video Avatar except there isn't any lower limit on the number of frames and you can use your reference images in a different context than the image itself\
+*Hunyuan Video Custom Edit*: Hunyuan Video Controlnet, use it to do inpainting and replace a person in a video while still keeping his poses. Similar to Vace but less restricted than the Wan models in terms of content...
+
+
+### June 6 2025: WanGP v5.41
+👋 Bonus release: Support for **AccVideo** Lora to speed up x2 Video generations in Wan models. Check the Loras documentation to get the usage instructions of AccVideo.\
+You will need to do a *pip install -r requirements.txt*
+
+### June 6 2025: WanGP v5.4
+👋 World Exclusive : **Hunyuan Video Avatar** Support ! You won't need 80 GB of VRAM nor 32 GB oF VRAM, just 10 GB of VRAM will be sufficient to generate up to 15s of high quality speech / song driven Video at a high speed with no quality degradation. Support for TeaCache included.\
+Here is a link to the original repo where you will find some very interesting documentation and examples. https://github.com/Tencent-Hunyuan/HunyuanVideo-Avatar. Kudos to the Hunyuan Video Avatar team for the best model of its kind.\
+Also many thanks to Reevoy24 for his repackaging / completing the documentation
+
+### May 28 2025: WanGP v5.31
+👋 Added **Phantom 14B**, a model that you can use to transfer objects / people in the video. My preference goes to Vace that remains the king of controlnets.
+VACE improvements: Better sliding window transitions, image mask support in Matanyone, new Extend Video feature, and enhanced background removal options.
+
+### May 26, 2025: WanGP v5.3
+👋 Settings management revolution! Now you can:
+- Select any generated video and click *Use Selected Video Settings* to instantly reuse its configuration
+- Drag & drop videos to automatically extract their settings metadata
+- Export/import settings as JSON files for easy sharing and backup
+
+### May 20, 2025: WanGP v5.2
+👋 **CausVid support** - Generate videos in just 4-12 steps with the new distilled Wan model! Also added experimental MoviiGen for 1080p generation (20GB+ VRAM required). Check the Loras documentation to get the usage instructions of CausVid.
+
+### May 18, 2025: WanGP v5.1
+👋 **LTX Video 13B Distilled** - Generate high-quality videos in less than one minute!
+
+### May 17, 2025: WanGP v5.0
+👋 **One App to Rule Them All!** Added Hunyuan Video and LTX Video support, plus Vace 14B and integrated prompt enhancer.
+
 See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ## 📋 Table of Contents
 
-- [🚀 Quick Start](#-quick-start)
-- [📦 Installation](#-installation)
 - [🎯 Usage](#-usage)
 - [📚 Documentation](#-documentation)
 - [🔗 Related Projects](#-related-projects)
 
-## 🚀 Quick Start
+-----
 
-**One-click installation:** Get started instantly with [Pinokio App](https://pinokio.computer/)
+# 📦 Installation
 
-**Manual installation:**
-```bash
-git clone https://github.com/deepbeepmeep/Wan2GP.git
-cd Wan2GP
-conda create -n wan2gp python=3.10.9
-conda activate wan2gp
-pip install torch==2.7.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/cu128
-pip install -r requirements.txt
-```
+---
 
-**Run the application:**
-```bash
-python wgp.py  # Text-to-video (default)
-python wgp.py --i2v  # Image-to-video
-```
+## Nvidia GPU Compatibility Only
+ 
+- Only Nvidia GPU's 40XX, 50XX: Sage Attention Supported on 40 and 50 series. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
+---
 
-**Update the application:**
-If using Pinokio use Pinokio to update otherwise:
-Get in the directory where WanGP is installed and:
-```bash
-git pull
-pip install -r requirements.txt
-```
+### All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository.
 
+1. Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
 
-## 📦 Installation
+2. Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
-For detailed installation instructions for different GPU generations:
-- **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for RTX 10XX to RTX 50XX
+3. Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download Wan2GP.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases/tag/v1.0.0) 👈 or from the Releases section at the top right of this page.
+
+4. After downloading, double click Wan2GP.exe and pick where you would like to extract the zip files too.
+
+5. Then open Wan2GP main folder and you will see this in the root
+
+<img width="775" height="270" alt="Screenshot 2025-07-14 065810" src="https://github.com/user-attachments/assets/9ad3545c-0221-4221-9252-eae872ceadd9" />
+
+</div>
+
+6. Then double click on Install_Wan2GP_Torch_2.7.1+cu12.8.bat to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
+
+7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut.
+
+### If this worked for you, Please give it a Star ⭐. Thank you. 
+
+### If you have any problems with installation contact me Redtash1 at Discord Channel below but if it's with using or errors with Wan2GP after a successful installation, you can get Help from Deepbeepmeep or other Users from the official WanGP Discord: https://discord.gg/g7efUW9jGV
+
+---
+
+These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you should go to the original Wan2GP Repository and Git clone it from there.
+
+For detailed installation instructions for different GPU generations: 
+- **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
 
 ## 🎯 Usage
 
@@ -309,12 +408,6 @@ For detailed installation instructions for different GPU generations:
 - **[Changelog](docs/CHANGELOG.md)** - Latest updates and version history
 - **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
 
-## 📚 Video Guides
-- Nice Video that explain how to use Vace:\
-https://www.youtube.com/watch?v=FMo9oN2EAvE
-- Another Vace guide:\
-https://www.youtube.com/watch?v=T5jNiEhf9xk
-
 ## 🔗 Related Projects
 
 ### Other Models for the GPU Poor
@@ -328,5 +421,5 @@ https://www.youtube.com/watch?v=T5jNiEhf9xk
 ---
 
 <p align="center">
-Made with ❤️ by DeepBeepMeep
+Made with❤️ by DeepBeepMeep
 </p> 
