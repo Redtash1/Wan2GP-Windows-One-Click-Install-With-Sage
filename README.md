@@ -366,7 +366,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 2. Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
-3. Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download Wan2GP.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases/tag/v1.0.0) 👈 or from the Releases section at the top right of this page.
+3. Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download Wan2GP.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases) 👈 or from the Releases section at the top right of this page.
 
 4. After downloading, double click Wan2GP.exe and pick where you would like to extract the zip files too.
 
