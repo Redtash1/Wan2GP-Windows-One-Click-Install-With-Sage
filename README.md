@@ -4,7 +4,7 @@
 # DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
 
 
-## I made Wan2GP Portable/Standalone for Windows that uses 40 & 50 series Nvidia GPU's only. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Creates a Launch Wan2GP Desktop Shortcut. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
+## I made Wan2GP Portable/Standalone for Windows that uses 30,40 & 50 series Nvidia GPU's only. 1 click install with Sage Attention and Triton. It uses python_embeded 3.10.9, Torch 2.7.1 with Cuda 12.8. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton and Creates a Launch Wan2GP Desktop Shortcut. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
@@ -357,7 +357,7 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ## Nvidia GPU Compatibility Only
  
-- Only Nvidia GPU's 40XX, 50XX: Sage Attention Supported on 40 and 50 series. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
+- Only Nvidia GPU's 30XX,40XX, 50XX: Sage Attention Supported on 30, 40 and 50 series. Use Install_Wan2GP_Torch_2.7.1+cu12.8.bat
 ---
 
 ### All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository.
