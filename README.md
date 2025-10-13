@@ -4,7 +4,7 @@
 # DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
 
 
-## I made this Wan2GP Portable 1 click install for Windows that uses Nvidia GTX 10XX, 16XX, RTX Quadro, 20XX, 30XX, 40XX, 50XX with Sage Attention and Triton. GTX 10XX, 16XX doesn't support Sage Attention. During installation it will update Wan2GP, install Torch etc..., Sage Attention, Triton (if supported). Creates Launch Wan2GP & Videos/Pics Desktop Shortcuts. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
+## I made this Wan2GP Portable 1 click install for Windows that uses Nvidia GTX 10XX, 16XX, RTX Quadro, 20XX, 30XX, 40XX, 50XX with Sage Attention and Triton. GTX 10XX, 16XX doesn't support Sage Attention. During installation it will update Wan2GP, install Torch etc..., *Sage Attention, *Triton (*if supported). Creates Launch Wan2GP & Videos/Pics Desktop Shortcuts. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
