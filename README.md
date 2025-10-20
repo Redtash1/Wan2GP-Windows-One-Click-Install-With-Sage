@@ -8,7 +8,8 @@
 
 ## Click here to jump to Install 👉 [Installation](#-Installation) 👈
 
-# [![Downloads](https://img.shields.io/github/downloads/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/total.svg)](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases)
+# ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/total?style=for-the-badge&labelColor=orange&color=0000ff)
+
 
 </div>
 
