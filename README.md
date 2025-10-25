@@ -15,7 +15,6 @@
 
 # WanGP
 
------
 <p align="center">
 <b>WanGP by DeepBeepMeep : The best Open Source Video Generative Models Accessible to the GPU Poor</b>
 </p>
