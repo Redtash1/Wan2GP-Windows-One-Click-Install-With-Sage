@@ -1,3 +1,18 @@
+<div align="center">
+
+
+# DON'T CLONE THIS REPO, IT WON'T WORK AS IT ALL DEPENDS ON THE PYTHON_EMBEDED TO WORK! 
+
+
+## I made Wan2GP Portable 1 click install for Windows that uses Nvidia GTX *10XX, *16XX, RTX Quadro, 20XX, 30XX, 40XX, 50XX GPU's. It uses python_embeded 3.10.9, during installation it will update Wan2GP, install Torch etc..., *Sage Attention, *Triton (*if applicable) & Create Launch Wan2GP & Video/Pics folder Desktop Shortcuts. All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository. 
+
+## Click here to jump to Install 👉 [Installation](#-Installation) 👈
+
+# ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/total?style=for-the-badge&labelColor=orange&color=0000ff)
+
+</div>
+
+
 # WanGP
 
 -----
@@ -7,8 +22,7 @@
 
 WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models with:
 - Low VRAM requirements (as low as 6 GB of VRAM is sufficient for certain models)
-- Support for old Nvidia GPUs (RTX 10XX, 20xx, ...)
-- Support for AMD GPUs Radeon RX 76XX, 77XX, 78XX & 79XX, instructions in the Installation Section Below.
+- Support for Nvidia GTX *10XX, *16XX, RTX Quadro, 20XX, 30XX, 40XX, 50XX GPU's
 - Very Fast on the latest GPUs
 - Easy to use Full Web based interface
 - Auto download of the required model adapted to your specific architecture
@@ -61,11 +75,6 @@ Huge Kudos & Thanks to **Tophness** that has outdone himself with these Great Fe
 - Added **Plugin support** to WanGP : found that features are missing in WanGP, you can now add tabs at the top in WanGP. Each tab may contain a full embedded App that can share data with the Video Generator of WanGP. Please check the Plugin guide written by Tophness and don't hesitate to contact him or me on the Discord if you have a plugin you want to share. I have added a new Plugins channels to discuss idea of plugins and help each other developing plugins. *Idea for a PlugIn that may end up popular*: a screen where you view the hard drive space used per model and that will let you remove unused models weights
 - Two Plugins ready to use designed & developped by **Tophness**: an **Extended Gallery** and a **Lora multipliers Wizard**
 
-WanGP v9 is now targetting Pytorch 2.8 although it should still work with 2.7, don't forget to upgrade by doing:
-```bash
-pip install torch==2.8.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/cu128
-```
-You will need to upgrade Sage Attention or Flash (check the installation guide)
 
 *Update info: you might have some git error message while upgrading to v9 if WanGP is already installed.*
 Sorry about that if that's the case, you will need to reinstall WanGP.
@@ -125,81 +134,48 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 ## 📋 Table of Contents
 
-- [🚀 Quick Start](#-quick-start)
 - [📦 Installation](#-installation)
 - [🎯 Usage](#-usage)
 - [📚 Documentation](#-documentation)
 - [🔗 Related Projects](#-related-projects)
 
-## 🚀 Quick Start
 
-**One-click installation:** 
-- Get started instantly with [Pinokio App](https://pinokio.computer/)
-- Use Redtash1 [One Click Install with Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage)
 
-**Manual installation:**
-```bash
-git clone https://github.com/deepbeepmeep/Wan2GP.git
-cd Wan2GP
-conda create -n wan2gp python=3.10.9
-conda activate wan2gp
-pip install torch==2.8.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/cu128
-pip install -r requirements.txt
-```
+# 📦 Installation
 
-**Run the application:**
-```bash
-python wgp.py
-```
 
-**Update the application:**
-If using Pinokio use Pinokio to update otherwise:
-Get in the directory where WanGP is installed and:
-```bash
-git pull
-conda activate wan2gp
-pip install -r requirements.txt
-```
+## Nvidia GPU Compatibility  GTX 10XX, 16XX, RTX Quadro, 20XX, 30XX, 40XX, 50XX GPU's
 
-if you get some error messages related to git, you may try the following (beware this will overwrite local changes made to the source code of WanGP):
-```bash
-git fetch origin && git reset --hard origin/main
-conda activate wan2gp
-pip install -r requirements.txt
-```
+### All Wan2GP updates comes directly from the original DeepBeepMeep/Wan2GP Repository.
 
-## 🐳 Docker:
+1. Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
 
-**For Debian-based systems (Ubuntu, Debian, etc.):**
+2. Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
-```bash
-./run-docker-cuda-deb.sh
-```
+3. Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download Wan2GP.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases) 👈 or from the Releases section at the top right of this page.
 
-This automated script will:
+4. After downloading, double click Wan2GP.exe and pick where you would like to extract the zip files too.
 
-- Detect your GPU model and VRAM automatically
-- Select optimal CUDA architecture for your GPU
-- Install NVIDIA Docker runtime if needed
-- Build a Docker image with all dependencies
-- Run WanGP with optimal settings for your hardware
+5. Then open Wan2GP main folder and you will see this in the root
 
-**Docker environment includes:**
+<img width="834" height="388" alt="wan2gp2" src="https://github.com/user-attachments/assets/c5dcd61a-1000-4ffd-9cad-0fae71aa23b4" />
 
-- NVIDIA CUDA 12.4.1 with cuDNN support
-- PyTorch 2.6.0 with CUDA 12.4 support
-- SageAttention compiled for your specific GPU architecture
-- Optimized environment variables for performance (TF32, threading, etc.)
-- Automatic cache directory mounting for faster subsequent runs
-- Current directory mounted in container - all downloaded models, loras, generated videos and files are saved locally
+</div>
 
-**Supported GPUs:** RTX 40XX, RTX 30XX, RTX 20XX, GTX 16XX, GTX 10XX, Tesla V100, A100, H100, and more.
+6. Then double click on the Install.bat that matches you GPU to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
 
-## 📦 Installation
+7. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut.
 
-### Nvidia
-For detailed installation instructions for different GPU generations:
-- **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for RTX 10XX to RTX 50XX
+### If this worked for you, Please give it a Star ⭐. Thank you. 
+
+### If you have any problems with installation contact me Redtash1 at Discord Channel below but if it's with using or errors with Wan2GP after a successful installation, you can get Help from Deepbeepmeep or other Users from the official WanGP Discord: https://discord.gg/g7efUW9jGV
+
+---
+
+These instructions below won't work for this version of Wan2GP, because this version uses python_embeded and not Conda or a venv. But you can try them if you want to do a manual install without using this Wan2GP Stand-alone version but you should go to the original Wan2GP Repository and Git clone it from there.
+
+For detailed installation instructions for different GPU generations: 
+- **[Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions for GTX 10XX to RTX 50XX
 
 ### AMD
 For detailed installation instructions for different GPU generations:
