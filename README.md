@@ -34,7 +34,6 @@ WanGP supports the Wan (and derived models), Hunyuan Video and LTV Video models 
 
 **Follow DeepBeepMeep on Twitter/X to get the Latest News**: https://x.com/deepbeepmeep
 
------
 
 ### You have your choice of Dark or Light Theme
 
@@ -75,22 +74,6 @@ Huge Kudos & Thanks to **Tophness** that has outdone himself with these Great Fe
 - Added **Plugin support** to WanGP : found that features are missing in WanGP, you can now add tabs at the top in WanGP. Each tab may contain a full embedded App that can share data with the Video Generator of WanGP. Please check the Plugin guide written by Tophness and don't hesitate to contact him or me on the Discord if you have a plugin you want to share. I have added a new Plugins channels to discuss idea of plugins and help each other developing plugins. *Idea for a PlugIn that may end up popular*: a screen where you view the hard drive space used per model and that will let you remove unused models weights
 - Two Plugins ready to use designed & developped by **Tophness**: an **Extended Gallery** and a **Lora multipliers Wizard**
 
-
-*Update info: you might have some git error message while upgrading to v9 if WanGP is already installed.*
-Sorry about that if that's the case, you will need to reinstall WanGP.
-There are two different ways to fix this issue while still preserving your data:
-1) **Command Line**
-If you have access to a terminal window :
-```
-cd installation_path_of_wangp
-git fetch origin && git reset --hard origin/main
-pip install -r requirements.txt
-```
-
-2) **Generic Method**
-a) move outside the installation WanGP folder the folders **ckpts**, **settings**, **outputs** and all the **loras** folders and the file **wgp_config.json**
-b) delete the WanGP folder and reinstall
-c) move back what you moved in a)
 
 ## 🔥 Latest Updates : 
 ### October 6 2025: WanGP v8.999 - A few last things before the Big Unknown ...
