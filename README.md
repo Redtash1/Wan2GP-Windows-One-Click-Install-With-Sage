@@ -132,23 +132,27 @@ See full changelog: **[Changelog](docs/CHANGELOG.md)**
 
 1. Make sure your Nvidia graphics drivers are up-to-date. If they are not or if your not sure, please click on the following link to download Nvidia graphics drivers. 👉 [Nvidia Drivers](https://www.nvidia.com/en-us/software/nvidia-app/) 👈
 
-2. Make sure you have Cuda Toolkit 12.8 or higher installed. 👉 [Nvidia Toolkit](https://developer.nvidia.com/cuda-toolkit) 👈
+2. Build Tools for Visual Studio 2022 with C++ Extentions 👉 [Vs2022 Download](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) 👈
 
-3. Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
+3. Make sure you have Cuda Toolkit 12.8 or higher installed. 👉 [Nvidia Toolkit](https://developer.nvidia.com/cuda-toolkit) 👈
 
-4. Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download Wan2GP.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases) 👈 or from the Releases section at the top right of this page.
+4. FFMPEG installed & on PATH 👉 [FFMPEG Download](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n8.0-latest-win64-gpl-8.0.zip) 👈
 
-5. After downloading, double click Wan2GP.exe and pick where you would like to extract the zip files too.
+5. Make sure you have Git installed as it will be needed to update Wan2GP, if not download the Git Standalone Installer and click on Git for Windows/x64 Setup. 👉 [Git Standalone Installer Download](https://git-scm.com/downloads/win) 👈 To install Git, double click Git.exe and just keep clicking next until it's installed, you don't need to change anything.
 
-6. Then open Wan2GP main folder and you will see this in the root
+6. Now after you have made sure Nvidia GPU drivers are up to date and Git is installed, download Wan2GP.exe from here 👉 [Wan2GP-Windows-One-Click-Install-With-Sage](https://github.com/Redtash1/Wan2GP-Windows-One-Click-Install-With-Sage/releases) 👈 or from the Releases section at the top right of this page.
+
+7. After downloading, double click Wan2GP.exe and pick where you would like to extract the zip files too.
+
+8. Then open Wan2GP main folder and you will see this in the root
 
 <img width="834" height="388" alt="wan2gp2" src="https://github.com/user-attachments/assets/c5dcd61a-1000-4ffd-9cad-0fae71aa23b4" />
 
 </div>
 
-7. Then double click on the Install.bat that matches you GPU to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
+9. Then double click on the Install.bat that matches you GPU to start the installation. After installation is finished, slowly scroll back up to the top to make sure everything installed correctly.
 
-8. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut.
+10. To launch Wan2GP you can use either the Launch_Wan2GP.bat in the current folder or the Desktop shortcut.
 
 ### If this worked for you, Please give it a Star ⭐. Thank you. 
 
